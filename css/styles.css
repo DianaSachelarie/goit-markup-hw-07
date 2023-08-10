@@ -945,3 +945,23 @@ a span.logo-2 {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
+/* Mobile */
+
+@media screen and (max-width: 767px) {
+
+}
+
+
+/* Tablet */
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+
+}
+
+
+/* Desktop */
+
+@media screen and (min-width: 1158px) {
+
+}
