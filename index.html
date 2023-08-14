@@ -13,7 +13,6 @@
   <body>
     <header class="global-header">
       <div class="container header-container">
-        <div class="container-navigation">
           <nav class="main-navigation">
             <a href="index.html" class="logo header-logo"><span class="logo-1">Web</span>Studio</a>
           <ul class="header-menu header-tablet">
@@ -28,16 +27,21 @@
             </li>
           </ul>
         </nav>
-        <ul class="header-contact header-tablet">
+        <button type="button" class="burger-btn js-open-menu">
+            <svg width="40" height="40" class="burger-icon">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+        <ul class="header-contact">
           <li class="header-contact-item">
-            <a href="mailto:info@devstudio.com" class="header-contact-mail" aria-label="Mail">
+            <a href="mailto:info@devstudio.com" class="header-contact-mail header-contact-list-link" aria-label="Mail">
             <svg class="mail-icon">
               <use href="./images/icons.svg#icon-envelope" class="mail-svg">
               </use>
             </svg>info@devstudio.com</a>
           </li>
           <li class="header-contact-item">
-            <a href="tel:+1212-772-4150" class="header-contact-tel" aria-label="Telephone">
+            <a href="tel:+1212-772-4150" class="header-contact-tel header-contact-list-link" aria-label="Telephone">
             <svg class="telephone-icon">
               <use href="./images/icons.svg#icon-smartphone" class="tel-svg">
               </use>
@@ -45,18 +49,10 @@
           </li>
         </ul>
         </div>
-        <div class="header-burger">
-          <button type="button" class="burger-btn" data-menu-open>
-            <svg width="40" height="40" class="burger-icon">
-              <use href="./images/menu_icon.svg"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-      <div class="mobile-menu" data-menu>
-        <div class="mobile-container">
-          <button type="button" class="mobile-menu-close-btn" data-menu-close>&times;</button>
-          <ul class="mobile-menu-list">
+      <div class="mobile-menu-container js-menu-container">
+          <button type="button" class="mobile-close-menu js-close-menu" >&times;</button>
+          <div class="mobile-menu">
+            <ul class="mobile-menu-list">
             <li class="mobile-menu-item">
               <a href="index.html" class="mobile-menu-link active">Studio</a>
             </li>
@@ -67,16 +63,19 @@
               <a href="" class="mobile-menu-link">Contacts</a>
             </li>
           </ul>
-          <ul class="mobile-contact-list">
-            <li class="mobile-contact-item-phone">
-              <a href="tel:+1212-772-4150" class="mobile-contact-tel" aria-label="Telephone">+1 212-772-4150</a>
-            </li>
-            <li class="mobile-contact-item-mail">
-              <a href="mailto:info@devstudio.com" class="mobile-contact-mail" aria-label="Mail">info@devstudio.com</a>
-            </li>
-          </ul>
-
-          <ul class="mobile-social-list">
+          <div class="mobile-address">
+            <ul class="mobile-contact-list">
+              <li class="mobile-contact-item-phone">
+                 <a href="tel:+1212-772-4150" class="mobile-contact-tel" aria-label="Telephone">+1 212-772-4150</a>
+              </li>
+              <li class="mobile-contact-item-mail">
+                <a href="mailto:info@devstudio.com" class="mobile-contact-mail" aria-label="Mail">info@devstudio.com</a>
+              </li>
+            </ul>
+          </div>
+          </div>
+          <div>
+            <ul class="mobile-social-list">
             <li class="mobile-social-item">
               <a href="https://www.instagram.com/" class="mobile-social-link">Instagram</a>
             </li>
@@ -90,35 +89,56 @@
               <a href="https://www.linkedin.com/" class="mobile-social-link">LinkedIn</a>
             </li>
           </ul>
-        </div>
+          </div>
       </div>
     </header>
 
     <main>
       <section class="hero-section">
         <h1 class="hero-heading">EFFECTIVE SOLUTIONS FOR <span style = "display: block;">YOUR BUSINESS</span></h1>
+        <h1 class="hero-heading-mobile">EFFECTIVE SOLUTIONS <span style = "display: block;">FOR YOUR BUSINESS</span></h1>
         <button data-modal-open class="hero-btn" type="button">Request our service</button>
       </section>
 
       <section class="benefits">
-        <div class="container">
+        <div class="container container-benefits">
           <ul class="benefits-content">
             <li class="benefits-content-item">
+              <div class="benefits-form">
+                <svg class="benefits-icon" width="70" height="70">
+                  <use href="./images/icons.svg#icon-antenna"></use>
+                </svg>
+              </div>
               <h3 class="benefits-content-title">ATTENTION TO DETAILS</h3>
               <p class="benefits-content-description">We go into all the details and processes of your business to develop a customized solution.</p>
             </li>
 
             <li class="benefits-content-item">
+              <div class="benefits-form">
+                <svg class="benefits-icon" width="70" height="70">
+                  <use href="./images/icons.svg#icon-clock"></use>
+                </svg>
+              </div>
               <h3 class="benefits-content-title">PUNCTUALITY</h3>
               <p class="benefits-content-description">With us, you can feel safe and secure. An important principle of the company: respect your time and deadlines.</p>
             </li>
 
             <li class="benefits-content-item">
+              <div class="benefits-form">
+                <svg class="benefits-icon" width="70" height="70">
+                  <use href="./images/icons.svg#icon-diagram"></use>
+                </svg>
+              </div>
               <h3 class="benefits-content-title">PLANNING</h3>
               <p class="benefits-content-description">You will be able to observe and participate in every phase of solution development and implementation.</p>
             </li>
 
             <li class="benefits-content-item">
+              <div class="benefits-form">
+                <svg class="benefits-icon" width="70" height="70">
+                  <use href="./images/icons.svg#icon-astronaut"></use>
+                </svg>
+              </div>
               <h3 class="benefits-content-title">MODERN TECHNOLOGIES</h3>
               <p class="benefits-content-description">We use innovative tools to solve assigned tasks. It's time to simplify work processes.</p>
             </li>
@@ -126,29 +146,34 @@
         </div>
       </section>
 
-      <section class="features">
-        <div class="container">
+      <section class="features ">
+        <div class="desk-container">
           <h2 class="heading-2">What we do</h2>
-          <ul class="features-list">
-            <li class="features-list-item">
-              <img src="./images/service-img-1.jpg" alt="Developer writing code" width="370" height="294" class="features-list-img">
+          <div class="features-list">
+            <div class="features-container">
+              <picture>
+                <source media="(min-width:1170px)" srcset="images/service-img-1.png, images/service-img-1-2x.png">
+                <img src="./images/service-img-1.png" alt="Developer writing code" width="370" height="294" class="features-list-img">
+              </picture>
+                <span class="features-list-overlay-desc">DESKTOP APPS</span>
+            </div>
 
-                <div class="features-list-overlay"><span class="features-list-overlay-desc">DESKTOP APPS</span></div>
-
-            </li>
-            <li class="features-list-item">
-              <img src="./images/service-img-2.jpg" alt="Developer working on mobile applications" width="370" height="294" class="features-list-img">
-              <div class="features-list-overlay">
+            <div class="features-container">
+              <picture>
+                <source media="(min-width:1170px)" srcset="images/service-img-2.png, images/service-img-2-2x.png">
+                <img src="./images/service-img-2.png" alt="Developer working on mobile applications" width="370" height="294" class="features-list-img">
+              </picture>
                 <span class="features-list-overlay-desc">Mobile APPS</span>
-              </div>
-            </li>
-            <li class="features-list-item">
-              <img src="./images/service-img-3.jpg" alt="Developer editing styles on tablet" width="370" height="294" class="features-list-img">
-              <div class="features-list-overlay">
+            </div>
+
+            <div class="features-container">
+              <picture>
+                <source media="(min-width:1170px)" srcset="images/service-img-3.png, images/service-img-3-2x.png">
+                <img src="./images/service-img-3.png" alt="Developer editing styles on tablet" width="370" height="294" class="features-list-img">
+              </picture>
                 <span class="features-list-overlay-desc">DESIGN SOLUTIONS</span>
-              </div>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -157,7 +182,15 @@
           <h2 class="heading-2">Our Team</h2>
           <div class="container-team" style="text-align:center">
           <div class="container-team-packet">
-            <img src="./images/prod-design-christopher-walker.jpg" alt="Christopher Walker" width="270" height="260">
+            <picture class="team-picture">
+              <source media="(min-width: 1158px)"
+               srcset="./images/prod-design-christopher-walker.png, ./images/prod-design-christopher-walker-2x.png">
+               <source media="(min-width: 768px)"
+               srcset="./images/prod-design-christopher-walker-t.png, ./images/prod-design-christopher-walker-t-2x.png">
+               <source media="(min-width: 480px)"
+               srcset="./images/prod-design-christopher-walker-m.png, ./images/prod-design-christopher-walker-m-2x.png">
+               <img src="./images/prod-design-christopher-walker.jpg" alt="Christopher Walker" width="270" height="260">
+            </picture>
            <div class="container-team-content">
             <span class="container-team-name">Christopher Walker</span>
             <span>Product Designer</span>
@@ -195,7 +228,16 @@
           </div>
 
           <div class="container-team-packet">
-            <img src="./images/front-dev-kylie-evans.jpg" alt="Kylie Evans" width="270" height="260">
+            <picture class="team-picture">
+              <source media="(min-width: 1158px)"
+               srcset="./images/front-dev-kylie-evans.png, ./images/front-dev-kylie-evans-2x.png">
+               <source media="(min-width: 768px)"
+               srcset="./images/front-dev-kylie-evans-t.png, ./images/front-dev-kylie-evans-t-2x.png">
+               <source media="(min-width: 480px)"
+               srcset="./images/front-dev-kylie-evans-m.png, ./images/front-dev-kylie-evans-m-2x.png">
+               <img src="./images/front-dev-kylie-evans.png" alt="Kylie Evans" width="270" height="260">
+            </picture>
+
           <div class="container-team-content">
             <span class="container-team-name">Kylie Evans</span>
             <span>Frontend Developer</span>
@@ -233,7 +275,16 @@
           </div>
 
           <div class="container-team-packet">
-            <img src="./images/marketing-ryan-harris.jpg" alt="Ryan Harris" width="270" height="260">
+            <picture class="team-picture">
+              <source media="(min-width: 1158px)"
+               srcset="./images/marketing-ryan-harris.png, ./images/marketing-ryan-harris-2x.png">
+               <source media="(min-width: 768px)"
+               srcset="./images/marketing-ryan-harris-t.png, ./images/marketing-ryan-harris-t-2x.png">
+               <source media="(min-width: 480px)"
+               srcset="./images/marketing-ryan-harris-m.png, ./images/marketing-ryan-harris-m-2x.png">
+               <img src="./images/marketing-ryan-harris.png" alt="Ryan Harris" width="270" height="260">
+            </picture>
+
           <div class="container-team-content">
             <span class="container-team-name">Ryan Harris</span>
             <span>Marketing</span>
@@ -271,7 +322,16 @@
           </div>
 
           <div class="container-team-packet">
-            <img src="./images/ui-design-tyler-moore.jpg" alt="Tyler Moore" width="270" height="260">
+            <picture class="team-picture">
+              <source media="(min-width: 1158px)"
+               srcset="./images/ui-design-tyler-moore.png, ./images/ui-design-tyler-moore-2x.png">
+               <source media="(min-width: 768px)"
+               srcset="./images/ui-design-tyler-moore-t.png, ./images/ui-design-tyler-moore-t-2x.png">
+               <source media="(min-width: 480px)"
+               srcset="./images/ui-design-tyler-moore-m.png, ./images/ui-design-tyler-moore-m-2x.png">
+               <img src="./images/ui-design-tyler-moore.png" alt="Tyler Moore" width="270" height="260">
+            </picture>
+
           <div class="container-team-content">
             <span class="container-team-name">Tyler Moore</span>
             <span>UI Designer</span>
@@ -474,7 +534,7 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
