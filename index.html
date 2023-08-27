@@ -27,27 +27,23 @@
             </li>
           </ul>
         </nav>
+        <div class="header-contact">
+          <a href="mailto:info@devstudio.com" class="header-contact-mail" aria-label="Mail">
+            <svg class="mail-icon">
+              <use href="./images/icons.svg#icon-envelope" class="mail-svg">
+              </use>
+            </svg>info@devstudio.com</a>
+          <a href="tel:+1212-772-4150" class="header-contact-tel" aria-label="Telephone">
+            <svg class="telephone-icon">
+              <use href="./images/icons.svg#icon-smartphone" class="tel-svg">
+              </use>
+            </svg>+1 212-772-4150</a>
+        </div>
         <button type="button" class="burger-btn js-open-menu">
             <svg width="40" height="40" class="burger-icon">
               <use href="./images/icons.svg#icon-menu"></use>
             </svg>
           </button>
-        <ul class="header-contact">
-          <li class="header-contact-item">
-            <a href="mailto:info@devstudio.com" class="header-contact-mail header-contact-list-link" aria-label="Mail">
-            <svg class="mail-icon">
-              <use href="./images/icons.svg#icon-envelope" class="mail-svg">
-              </use>
-            </svg>info@devstudio.com</a>
-          </li>
-          <li class="header-contact-item">
-            <a href="tel:+1212-772-4150" class="header-contact-tel header-contact-list-link" aria-label="Telephone">
-            <svg class="telephone-icon">
-              <use href="./images/icons.svg#icon-smartphone" class="tel-svg">
-              </use>
-            </svg>+1 212-772-4150</a>
-          </li>
-        </ul>
         </div>
       <div class="mobile-menu-container js-menu-container">
           <button type="button" class="mobile-close-menu js-close-menu" >&times;</button>
@@ -109,8 +105,10 @@
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="benefits-content-title">ATTENTION TO DETAILS</h3>
-              <p class="benefits-content-description">We go into all the details and processes of your business to develop a customized solution.</p>
+              <div class="benefits-content-text">
+                <h3 class="benefits-content-title">ATTENTION TO DETAILS</h3>
+                <p class="benefits-content-description">We go into all the details and processes of your business to develop a customized solution.</p>
+              </div>
             </li>
 
             <li class="benefits-content-item">
@@ -119,8 +117,10 @@
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="benefits-content-title">PUNCTUALITY</h3>
-              <p class="benefits-content-description">With us, you can feel safe and secure. An important principle of the company: respect your time and deadlines.</p>
+              <div class="benefits-content-text">
+                <h3 class="benefits-content-title">PUNCTUALITY</h3>
+                <p class="benefits-content-description">With us, you can feel safe and secure. An important principle of the company: respect your time and deadlines.</p>
+              </div>
             </li>
 
             <li class="benefits-content-item">
@@ -129,8 +129,10 @@
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="benefits-content-title">PLANNING</h3>
-              <p class="benefits-content-description">You will be able to observe and participate in every phase of solution development and implementation.</p>
+              <div class="benefits-content-text">
+                <h3 class="benefits-content-title">PLANNING</h3>
+                <p class="benefits-content-description">You will be able to observe and participate in every phase of solution development and implementation.</p>
+              </div>
             </li>
 
             <li class="benefits-content-item">
@@ -139,8 +141,10 @@
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="benefits-content-title">MODERN TECHNOLOGIES</h3>
-              <p class="benefits-content-description">We use innovative tools to solve assigned tasks. It's time to simplify work processes.</p>
+              <div class="benefits-content-text">
+                <h3 class="benefits-content-title">MODERN TECHNOLOGIES</h3>
+                <p class="benefits-content-description">We use innovative tools to solve assigned tasks. It's time to simplify work processes.</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -152,7 +156,7 @@
           <div class="features-list">
             <div class="features-container">
               <picture>
-                <source media="(min-width:1170px)" srcset="images/service-img-1.png, images/service-img-1-2x.png">
+                <source media="(min-width:1170px)" srcset="images/service-img-1.png 1x, images/service-img-1-2x.png 2x">
                 <img src="./images/service-img-1.png" alt="Developer writing code" width="370" height="294" class="features-list-img">
               </picture>
                 <span class="features-list-overlay-desc">DESKTOP APPS</span>
@@ -160,7 +164,7 @@
 
             <div class="features-container">
               <picture>
-                <source media="(min-width:1170px)" srcset="images/service-img-2.png, images/service-img-2-2x.png">
+                <source media="(min-width:1170px)" srcset="images/service-img-2.png 1x, images/service-img-2-2x.png 2x">
                 <img src="./images/service-img-2.png" alt="Developer working on mobile applications" width="370" height="294" class="features-list-img">
               </picture>
                 <span class="features-list-overlay-desc">Mobile APPS</span>
@@ -168,7 +172,7 @@
 
             <div class="features-container">
               <picture>
-                <source media="(min-width:1170px)" srcset="images/service-img-3.png, images/service-img-3-2x.png">
+                <source media="(min-width:1170px)" srcset="images/service-img-3.png 1x, images/service-img-3-2x.png 2x">
                 <img src="./images/service-img-3.png" alt="Developer editing styles on tablet" width="370" height="294" class="features-list-img">
               </picture>
                 <span class="features-list-overlay-desc">DESIGN SOLUTIONS</span>
@@ -184,12 +188,12 @@
           <div class="container-team-packet">
             <picture class="team-picture">
               <source media="(min-width: 1158px)"
-               srcset="./images/prod-design-christopher-walker.png, ./images/prod-design-christopher-walker-2x.png">
+               srcset="./images/prod-design-christopher-walker.png 1x, ./images/prod-design-christopher-walker-2x.png 2x">
                <source media="(min-width: 768px)"
-               srcset="./images/prod-design-christopher-walker-t.png, ./images/prod-design-christopher-walker-t-2x.png">
+               srcset="./images/prod-design-christopher-walker-t.png 1x, ./images/prod-design-christopher-walker-t-2x.png 2x">
                <source media="(min-width: 480px)"
-               srcset="./images/prod-design-christopher-walker-m.png, ./images/prod-design-christopher-walker-m-2x.png">
-               <img src="./images/prod-design-christopher-walker.jpg" alt="Christopher Walker" width="270" height="260">
+               srcset="./images/prod-design-christopher-walker-m.png 1x, ./images/prod-design-christopher-walker-m-2x.png 2x">
+               <img src="./images/prod-design-christopher-walker.png" alt="Christopher Walker" width="270" height="260">
             </picture>
            <div class="container-team-content">
             <span class="container-team-name">Christopher Walker</span>
@@ -230,11 +234,11 @@
           <div class="container-team-packet">
             <picture class="team-picture">
               <source media="(min-width: 1158px)"
-               srcset="./images/front-dev-kylie-evans.png, ./images/front-dev-kylie-evans-2x.png">
+               srcset="./images/front-dev-kylie-evans.png 1x, ./images/front-dev-kylie-evans-2x.png 2x">
                <source media="(min-width: 768px)"
-               srcset="./images/front-dev-kylie-evans-t.png, ./images/front-dev-kylie-evans-t-2x.png">
+               srcset="./images/front-dev-kylie-evans-t.png 1x, ./images/front-dev-kylie-evans-t-2x.png 2x">
                <source media="(min-width: 480px)"
-               srcset="./images/front-dev-kylie-evans-m.png, ./images/front-dev-kylie-evans-m-2x.png">
+               srcset="./images/front-dev-kylie-evans-m.png 1x, ./images/front-dev-kylie-evans-m-2x.png 2x">
                <img src="./images/front-dev-kylie-evans.png" alt="Kylie Evans" width="270" height="260">
             </picture>
 
@@ -277,11 +281,11 @@
           <div class="container-team-packet">
             <picture class="team-picture">
               <source media="(min-width: 1158px)"
-               srcset="./images/marketing-ryan-harris.png, ./images/marketing-ryan-harris-2x.png">
+               srcset="./images/marketing-ryan-harris.png 1x, ./images/marketing-ryan-harris-2x.png 2x">
                <source media="(min-width: 768px)"
-               srcset="./images/marketing-ryan-harris-t.png, ./images/marketing-ryan-harris-t-2x.png">
+               srcset="./images/marketing-ryan-harris-t.png 1x, ./images/marketing-ryan-harris-t-2x.png 2x">
                <source media="(min-width: 480px)"
-               srcset="./images/marketing-ryan-harris-m.png, ./images/marketing-ryan-harris-m-2x.png">
+               srcset="./images/marketing-ryan-harris-m.png 1x, ./images/marketing-ryan-harris-m-2x.png 2x">
                <img src="./images/marketing-ryan-harris.png" alt="Ryan Harris" width="270" height="260">
             </picture>
 
@@ -324,11 +328,11 @@
           <div class="container-team-packet">
             <picture class="team-picture">
               <source media="(min-width: 1158px)"
-               srcset="./images/ui-design-tyler-moore.png, ./images/ui-design-tyler-moore-2x.png">
+               srcset="./images/ui-design-tyler-moore.png 1x, ./images/ui-design-tyler-moore-2x.png 2x">
                <source media="(min-width: 768px)"
-               srcset="./images/ui-design-tyler-moore-t.png, ./images/ui-design-tyler-moore-t-2x.png">
+               srcset="./images/ui-design-tyler-moore-t.png 1x, ./images/ui-design-tyler-moore-t-2x.png 2x">
                <source media="(min-width: 480px)"
-               srcset="./images/ui-design-tyler-moore-m.png, ./images/ui-design-tyler-moore-m-2x.png">
+               srcset="./images/ui-design-tyler-moore-m.png 1x, ./images/ui-design-tyler-moore-m-2x.png 2x">
                <img src="./images/ui-design-tyler-moore.png" alt="Tyler Moore" width="270" height="260">
             </picture>
 
@@ -422,71 +426,69 @@
       </section>
     </main>
 
-    <footer class="global-footer">
-      <div class="container">
+    <footer class="global-footer container">
+      <div class="mob-container footer-container">
         <div class="footer-main-part">
-        <a href="index.html" class="logo"><span class="logo-1">Web</span><span class="logo-2">Studio</span></a>
-        <address class="address">
-          <ul class="footer-address-list">
-            <li class="footer-address-list-item">
-              <p>695 Park Ave, NY 10065, USA </p>
-            </li>
-            <li class="footer-address-list-item">
-              <a href="mailto:info@devstudio.com" class="footer-contact">info@devstudio.com</a>
-            </li>
-            <li class="footer-address-list-item">
-              <a href="tel:+1212-772-4150" class="footer-contact">+1 212-772-4150</a>
-            </li>
-          </ul>
-        </address>
-        </div>
-        <div class="footer-social-links">
-          <span class="footer-social-title">Find us on</span>
-          <ul class="footer-social-list">
-            <li class="footer-social-list">
+          <div class="footer-logo-address">
+            <a href="index.html" class="logo footer-logo"><span class="logo-1">Web</span>
+              <span class="logo-2">Studio</span></a>
+            <address class="address">
+              <ul class="footer-address-list">
+                <li class="footer-address-list-item footer-area">
+                  <p class="location-footer">695 Park Ave, NY 10065, USA </p>
+                </li>
+                <li class="footer-address-list-item">
+                  <a href="mailto:info@devstudio.com" class="footer-contact">info@devstudio.com</a>
+                </li>
+                <li class="footer-address-list-item">
+                  <a href="tel:+1212-772-4150" class="footer-contact">+1 212-772-4150</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-social-links">
+            <span class="footer-social-title">Find us on</span>
+            <div class="footer-social-list">
               <a href="https://www.instagram.com/" class="footer-social-icon-link" target="_blank">
                 <svg class="footer-icon">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
-            </li>
-            <li class="footer-social-list">
               <a href="https://www.twitter.com/" class="footer-social-icon-link" target="_blank">
                 <svg class="footer-icon">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
-            </li>
-            <li class="footer-social-list">
               <a href="https://www.facebook.com/" class="footer-social-icon-link" target="_blank">
                 <svg class="footer-icon">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
-            </li>
-            <li class="footer-social-list">
               <a href="https://www.linkedin.com/" class="footer-social-icon-link" target="_blank">
                 <svg class="footer-icon">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
-            </li>
-          </ul>
-          <div class="footer-newsletter">
-            <span class="footer-social-title">Subscribe to the newsletter</span>
-            <form class="newsletter-form">
+            </div>
+          </div>
+        </div>
+        <form class="newsletter-form">
+          <p class="footer-social-title">Subscribe to the newsletter</p>
+          <div class="input-form-container">
+            <label class="newsletter-label">
               <input type="email" name="user-email" placeholder="E-mail" class="input-form">
-              <button type="submit" class="footer-submit-btn"> Subscribe
+            </label>
+              <button type="submit" class="footer-submit-btn">
+                <span>Subscribe</span>
                 <svg class="btn-send-svg" width="24px" height="24px">
                   <use href="./images/icons.svg#icon-icon-send"></use>
                 </svg>
               </button>
-            </form>
           </div>
-        </div>
-        <script src="./js/modal.js"></script>
+        </form>
       </div>
     </footer>
+
 
     <div class="modal is-hidden" data-modal>
       <div class="modal-content">

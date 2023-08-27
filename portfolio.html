@@ -11,14 +11,20 @@
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header class="global-header">
-      <div class="container">
-        <nav class="main-navigation">
-          <a href="index.html" class="logo"><span class="logo-1">Web</span><span class="logo-2">Studio</span></a>
-          <ul class="navigation-list">
-            <li><a href="index.html" class="link-navigation">Studio</a></li>
-            <li><a href="portfolio.html" class="link-navigation active">Portfolio</a></li>
-            <li><a href="" class="link-navigation">Contacts</a></li>
+    <header class="global-header desk-container">
+      <div class="container header-container">
+          <nav class="main-navigation">
+            <a href="index.html" class="logo header-logo"><span class="logo-1">Web</span>Studio</a>
+          <ul class="header-menu header-tablet">
+            <li class="header-menu-item">
+              <a href="index.html" class="link-menu">Studio</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="portfolio.html" class="link-menu active">Portfolio</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="" class="link-menu">Contacts</a>
+            </li>
           </ul>
         </nav>
         <div class="header-contact">
@@ -33,6 +39,53 @@
               </use>
             </svg>+1 212-772-4150</a>
         </div>
+        <button type="button" class="burger-btn js-open-menu">
+            <svg width="40" height="40" class="burger-icon">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+        </div>
+      <div class="mobile-menu-container js-menu-container">
+          <button type="button" class="mobile-close-menu js-close-menu" >&times;</button>
+          <div class="mobile-menu">
+            <ul class="mobile-menu-list">
+            <li class="mobile-menu-item">
+              <a href="index.html" class="mobile-menu-link">Studio</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a href="portfolio.html" class="mobile-menu-link active">Portfolio</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a href="" class="mobile-menu-link">Contacts</a>
+            </li>
+          </ul>
+          <div class="mobile-address">
+            <ul class="mobile-contact-list">
+              <li class="mobile-contact-item-phone">
+                 <a href="tel:+1212-772-4150" class="mobile-contact-tel" aria-label="Telephone">+1 212-772-4150</a>
+              </li>
+              <li class="mobile-contact-item-mail">
+                <a href="mailto:info@devstudio.com" class="mobile-contact-mail" aria-label="Mail">info@devstudio.com</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mobile-social">
+            <ul class="mobile-social-list">
+            <li class="mobile-social-item">
+              <a href="https://www.instagram.com/" class="mobile-social-link">Instagram</a>
+            </li>
+            <li class="mobile-social-item">
+              <a href="https://www.twitter.com/" class="mobile-social-link">Twitter</a>
+            </li>
+            <li class="mobile-social-item">
+              <a href="https://www.facebook.com/" class="mobile-social-link">Facebook</a>
+            </li>
+            <li class="mobile-social-item">
+              <a href="https://www.linkedin.com/" class="mobile-social-link">LinkedIn</a>
+            </li>
+          </ul>
+          </div>
+          </div>
       </div>
     </header>
 
@@ -183,69 +236,68 @@
       </div>
     </main>
 
-    <footer class="global-footer">
-      <div class="container">
+    <footer class="global-footer container">
+      <div class="mob-container footer-container">
         <div class="footer-main-part">
-        <a href="index.html" class="logo"><span class="logo-1">Web</span><span class="logo-2">Studio</span></a>
-        <address class="address">
-          <ul class="footer-address-list">
-            <li class="footer-address-list-item">
-              <p>695 Park Ave, NY 10065, USA </p>
-            </li>
-            <li class="footer-address-list-item">
-              <a href="mailto:info@devstudio.com" class="footer-contact">info@devstudio.com</a>
-            </li>
-            <li class="footer-address-list-item">
-              <a href="tel:+1212-772-4150" class="footer-contact">+1 212-772-4150</a>
-            </li>
-          </ul>
-        </address>
-        </div>
-        <div class="footer-social-links">
-          <span class="footer-social-title">Find us on</span>
-          <ul class="footer-social-list">
-            <li class="footer-social-list">
+          <div class="footer-logo-address">
+            <a href="index.html" class="logo footer-logo"><span class="logo-1">Web</span>
+              <span class="logo-2">Studio</span></a>
+            <address class="address">
+              <ul class="footer-address-list">
+                <li class="footer-address-list-item footer-area">
+                  <p class="location-footer">695 Park Ave, NY 10065, USA </p>
+                </li>
+                <li class="footer-address-list-item">
+                  <a href="mailto:info@devstudio.com" class="footer-contact">info@devstudio.com</a>
+                </li>
+                <li class="footer-address-list-item">
+                  <a href="tel:+1212-772-4150" class="footer-contact">+1 212-772-4150</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-social-links">
+            <span class="footer-social-title">Find us on</span>
+            <div class="footer-social-list">
               <a href="https://www.instagram.com/" class="footer-social-icon-link" target="_blank">
                 <svg class="footer-icon">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
-            </li>
-            <li class="footer-social-list">
               <a href="https://www.twitter.com/" class="footer-social-icon-link" target="_blank">
                 <svg class="footer-icon">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
-            </li>
-            <li class="footer-social-list">
               <a href="https://www.facebook.com/" class="footer-social-icon-link" target="_blank">
                 <svg class="footer-icon">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
-            </li>
-            <li class="footer-social-list">
               <a href="https://www.linkedin.com/" class="footer-social-icon-link" target="_blank">
                 <svg class="footer-icon">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
-            </li>
-          </ul>
-          <div class="footer-newsletter">
-            <span class="footer-social-title">Subscribe to the newsletter</span>
-            <form class="newsletter-form">
+            </div>
+          </div>
+        </div>
+        <form class="newsletter-form">
+          <p class="footer-social-title">Subscribe to the newsletter</p>
+          <div class="input-form-container">
+            <label class="newsletter-label">
               <input type="email" name="user-email" placeholder="E-mail" class="input-form">
-              <button type="submit" class="footer-submit-btn"> Subscribe
+            </label>
+              <button type="submit" class="footer-submit-btn">
+                <span>Subscribe</span>
                 <svg class="btn-send-svg" width="24px" height="24px">
                   <use href="./images/icons.svg#icon-icon-send"></use>
                 </svg>
               </button>
-            </form>
           </div>
-        </div>
+        </form>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
